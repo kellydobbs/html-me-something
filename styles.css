@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box;
+  }
+ 
+/*  page elements  */
+
+
+header {
+    background-color: #EEE7DE;
+    text-align: center;
+    box-shadow: 0 2px 5px -2px gray;
+} 
+
+footer {
+    padding: 10px;
+    background-color: #eee7de;
+    box-shadow: 0 -2px 5px -2px gray;
+}
+
+footer p{
+    text-align:center;
+    line-height: 1px;
+    font-size: 12px;
+}
+
+main {
+    text-align: center;
+    margin:70px;
+}
+
+article {
+    padding:20px 10px 20px 10px;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    line-height:1.5;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	; 
+}
+
+h2 {
+    font-size: 28px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	; 
+
+}
+
+img {
+    margin:30px 10px 30px 10px;
+}
+
+iframe {
+    margin:30px 10px 30px 10px;
+}
+
+
+hr{
+    width: 50%;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+/* Classes */
+.hyperlinks {
+    text-decoration: none;
+    color: #D1A12A;
+    font-weight: bold;
+}
+
+.container {
+    padding-top:150px;
+}
+
+
+.content {
+    padding: 30px;
+}
+
+
+
+/* creates columns */ 
+.columns {
+    float: right;
+    width: 50%;
+    padding: 20px;
+  }
+
+/* Clears floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+
+ 
+  
+  /* navigation */
+  .topnav {
+    display:block;
+    overflow: hidden;
+    background-color: #EEE7DE;
+  }
+
+  .topnav a {
+    display:inline-block;
+    color: #7a561f;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	; 
+  }
+
+ .topnav a:hover {
+    color: #D1A12A;
+  }
+
+ .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+ /* Header */ 
+.header-column{
+    float: right;
+    width: 50%;
+  }
+}
+
+.header-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+/* ids */
+ #intro {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 150px 0px 150px;
+}
+
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+#logo {
+    padding:0px;
+    text-align:center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+  /* Responsive*/
+  @media screen and (max-width: 900px) {
+    .columns {   
+      width: 100%;
+      padding: 0;
+    }
+    #intro {
+        margin: 50px 50px 0px 50px;
+    }
+    
+  }
